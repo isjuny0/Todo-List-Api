@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>할 일 목록</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>할 일 목록</h1>
+
+<!--&lt;!&ndash; 로그인 성공 메시지 &ndash;&gt;-->
+<!--<div th:if="${message}" th:text="${message}" style="color: blue;"></div>-->
+
+<!--&lt;!&ndash; 새로운 Todo 추가 &ndash;&gt;-->
+<!--<form th:action="@{/todos}" method="post" th:object="${todoRequestDto}">-->
+<!--    <input type="text" th:field="*{title}" placeholder="할 일을 입력하세요" required />-->
+<!--    <button type="submit">추가</button>-->
+<!--</form>-->
+
+<!--<hr/>-->
+
+<!--&lt;!&ndash; Todo 리스트 출력 &ndash;&gt;-->
+<!--<ul>-->
+<!--    <li th:each="todo : ${todos}">-->
+<!--        <span th:text="${todo.title}"></span>-->
+<!--        <span th:text="${todo.completed} ? '✅' : '⬜'"></span>-->
+
+<!--        &lt;!&ndash; 완료 처리 &ndash;&gt;-->
+<!--        <form th:action="@{/todos/{id}/complete(id=${todo.id})}" method="post" style="display:inline;">-->
+<!--            <button type="submit">완료</button>-->
+<!--        </form>-->
+
+<!--        &lt;!&ndash; 삭제 처리 &ndash;&gt;-->
+<!--        <form th:action="@{/todos/{id}(id=${todo.id})}" method="post" style="display:inline;">-->
+<!--            <input type="hidden" name="_method" value="delete"/>-->
+<!--            <button type="submit">삭제</button>-->
+<!--        </form>-->
+<!--    </li>-->
+<!--</ul>-->
+
+</body>
+</html>
